@@ -3,8 +3,9 @@ const app = express();
 require('dotenv').config();
 const paypalRoutes = require('./modules/paypal/routes/paypalRoutes');
 const db = require('./config/db');
-const port = process.env.PORT || 5000;
 const cors = require('cors');
+
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(cors());
